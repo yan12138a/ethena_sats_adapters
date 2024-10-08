@@ -113,6 +113,9 @@ class IntegrationID(Enum):
     ALLSTAKE_USDE = ('allstake_usde', 'Allstake USDe', Token.USDE)
     ALLSTAKE_SUSDE = ('allstake_susde', 'Allstake sUSDe', Token.SUSDE)
 
+    # Vertex
+    VERTEX_USDE_ARBITRUM = ("vertex_usde_arbitrum", "Vertex USDe on Arbitrum", Token.USDE)
+
     def __init__(self, column_name: str, description: str, token: Token = Token.USDE):
         self.column_name = column_name
         self.description = description
